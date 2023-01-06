@@ -1,0 +1,86 @@
+{
+    "@odata.context": "https://services.odata.org/V4/Northwind/Northwind.svc/$metadata#Customers(CustomerID,CompanyName,Address,City,PostalCode,Phone,Country)",
+    "value": [
+        {
+            "CustomerID": "COMMI",
+            "CompanyName": "Comércio Mineiro",
+            "Address": "Av. dos Lusíadas, 23",
+            "City": "Sao Paulo",
+            "PostalCode": "05432-043",
+            "Country": "Brazil",
+            "Phone": "(11) 555-7647"
+        },
+        {
+            "CustomerID": "FAMIA",
+            "CompanyName": "Familia Arquibaldo",
+            "Address": "Rua Orós, 92",
+            "City": "Sao Paulo",
+            "PostalCode": "05442-030",
+            "Country": "Brazil",
+            "Phone": "(11) 555-9857"
+        },
+        {
+            "CustomerID": "GOURL",
+            "CompanyName": "Gourmet Lanchonetes",
+            "Address": "Av. Brasil, 442",
+            "City": "Campinas",
+            "PostalCode": "04876-786",
+            "Country": "Brazil",
+            "Phone": "(11) 555-9482"
+        },
+        {
+            "CustomerID": "HANAR",
+            "CompanyName": "Hanari Carnes",
+            "Address": "Rua do Paço, 67",
+            "City": "Rio de Janeiro",
+            "PostalCode": "05454-876",
+            "Country": "Brazil",
+            "Phone": "(21) 555-0091"
+        },
+        {
+            "CustomerID": "QUEDE",
+            "CompanyName": "Que Delícia",
+            "Address": "Rua da Panificadora, 12",
+            "City": "Rio de Janeiro",
+            "PostalCode": "02389-673",
+            "Country": "Brazil",
+            "Phone": "(21) 555-4252"
+        },
+        {
+            "CustomerID": "QUEEN",
+            "CompanyName": "Queen Cozinha",
+            "Address": "Alameda dos Canàrios, 891",
+            "City": "Sao Paulo",
+            "PostalCode": "05487-020",
+            "Country": "Brazil",
+            "Phone": "(11) 555-1189"
+        },
+        {
+            "CustomerID": "RICAR",
+            "CompanyName": "Ricardo Adocicados",
+            "Address": "Av. Copacabana, 267",
+            "City": "Rio de Janeiro",
+            "PostalCode": "02389-890",
+            "Country": "Brazil",
+            "Phone": "(21) 555-3412"
+        },
+        {
+            "CustomerID": "TRADH",
+            "CompanyName": "Tradição Hipermercados",
+            "Address": "Av. Inês de Castro, 414",
+            "City": "Sao Paulo",
+            "PostalCode": "05634-030",
+            "Country": "Brazil",
+            "Phone": "(11) 555-2167"
+        },
+        {
+            "CustomerID": "WELLI",
+            "CompanyName": "Wellington Importadora",
+            "Address": "Rua do Mercado, 12",
+            "City": "Resende",
+            "PostalCode": "08737-363",
+            "Country": "Brazil",
+            "Phone": "(14) 555-8122"
+        }
+    ]
+}

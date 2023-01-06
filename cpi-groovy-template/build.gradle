@@ -1,0 +1,65 @@
+plugins {
+    id 'groovy'
+    id 'java'
+    id 'jacoco'
+}
+
+group 'com.cpi.template'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.codehaus.groovy', name: 'groovy-all', version: '3.0.14'
+    implementation group: 'org.apache.camel', name: 'camel-core', version: '2.25.4'
+
+    implementation group: 'com.sap.cloud.adk', name: 'generic.api', version: '2.28.0'
+    implementation group: 'com.sap.cloud.script', name: 'script.api', version: '2.14.0'
+
+    testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-api', version: '5.9.0'
+    testRuntimeOnly    group: 'org.junit.jupiter', name: 'junit-jupiter-engine', version: '5.9.0'
+}
+
+jacoco {
+    toolVersion = "0.8.8"
+    reportsDirectory = layout.buildDirectory.dir('reports/jacoco')
+}
+
+test {
+    useJUnitPlatform()
+}
+
+jacocoTestReport {
+    dependsOn test
+}
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            element = 'BUNDLE'
+            excludes ['*Test']
+            limit {
+                counter = 'INSTRUCTION'
+                value = 'COVEREDRATIO'
+                minimum = 0.5
+            }
+            limit {
+                counter = 'BRANCH'
+                value = 'COVEREDRATIO'
+                minimum = 0.8
+            }
+            limit {
+                counter = 'LINE'
+                value = 'COVEREDRATIO'
+                minimum = 0.8
+            }
+            limit {
+                counter = 'CLASS'
+                value = 'MISSEDCOUNT'
+                maximum = 0
+            }
+        }
+    }
+}
